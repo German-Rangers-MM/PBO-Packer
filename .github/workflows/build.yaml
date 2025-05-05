@@ -18,10 +18,10 @@ jobs:
         include:
           - os: ubuntu-latest
             name: linux-x64
-            exe: packer
+            exe: pbo-packer
           - os: windows-latest
             name: windows-x64
-            exe: packer.exe
+            exe: pbo-packer.exe
     steps:
       - uses: actions/checkout@v4
       - uses: actions-rs/toolchain@v1
