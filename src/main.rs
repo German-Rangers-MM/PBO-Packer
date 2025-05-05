@@ -37,7 +37,7 @@ fn pack_mission(input_dir: &Path, output_path: &Path) -> Result<()> {
 fn main() -> Result<()> {
     let args: Vec<String> = std::env::args().collect();
     if args.len() != 3 {
-        anyhow::bail!("Usage: arma3-packer <input_dir> <output_path>");
+        anyhow::bail!("Usage: pbo-packer <input_dir> <output_path>");
     }
     
     let input_dir = PathBuf::from(&args[1]);
